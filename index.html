@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Task</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="titulo">
+                        <h1>Task</h1>
+                        <hr class="linha-titulo">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <form id="formulario">    
+                <div class="container">
+                    <div class="row" id="tipo">
+                        <div class="col-xl">
+                            <h4 class="form-control tipo-tarefa background-azul">Normal</h4>
+                        </div>
+                        <div class="col-xl">
+                            <h4 class="form-control tipo-tarefa background-amarelo">Importante</h4>
+                        </div>
+                        <div class="col-xl">
+                            <h4 class="form-control tipo-tarefa background-vermelho">Urgente</h4>
+                        </div>
+                    </div>
+                    <div id="valida-campos">
+
+                    </div>
+                    <div class="row invisivel" id="campos-tarefa">
+                        <div class="col-lg">
+                            <label class="form-control" id="item-tarefa">Tipo</label>
+                        </div>
+                        <div class="col-lg">
+                            <input type="text" name="assunto" class="form-control" placeholder="Assunto" id="assunto">
+                        </div>
+                        
+                        <textarea name="texto-tarefa" id="texto-tarefa" rows="5" class="form-control" placeholder="Descrevas todas as atividades da tarefa"></textarea>
+                        
+                        <div class="col-lg data">
+                            <label for="data-inicial">Data Inicial</label>                
+                            <input type="date" class="form-control" id="data-inicial" name="data-inicial">
+                        </div>
+
+                        <div class="col-lg data">
+                            <label for="data-final">Data Final</label>
+                            <input type="date" class="form-control" id="data-final" name="data-final">
+                        </div>
+                        <button class="btn btn-success btn-lg btn-block" id="cadastrar-tarefa">Cadastrar Tarefa</button>
+                    </div>
+                    <div id="historico-tarefas" class="invisivel">
+                        
+                        <div class="col-sm-6 campo-filtro">
+                            <label for="filtro">Filtro</label>
+                            <input type="text" class="form-control" id="filtro" name="filtro">    
+                        </div>
+                        <div id="lista-tarefas">
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <script src="js/cadastrar-tarefa.js"></script>
+        <script src="js/exibir-tarefas.js"></script>
+        <script src="js/filtro.js"></script>
+
+    </body>
+</html>
