@@ -1,2 +1,2 @@
 # Task
-Ferramenta pata criar tarefas simples, classificando e filtrando.
+Ferramenta para criar tarefas simples, classificando e filtrando.
